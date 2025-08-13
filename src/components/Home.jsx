@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import Topnav from './features/topnav';
-import Header from './features/header';
+import Topnav from './features/Topnav';
+import Header from './features/Header';
 import HorizontalCards from './features/HorizontalCards';
 import PopularCards from './features/PopularCards';
 

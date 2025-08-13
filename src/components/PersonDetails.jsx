@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from '../utils/axios';
-import Topnav from './features/topnav';
+import Topnav from './features/Topnav';
 
 const PersonDetails = () => {
   const { id } = useParams();
