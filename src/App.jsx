@@ -7,7 +7,7 @@ import SearchResults from './components/SearchResults';
 import MovieDetails from './components/MovieDetails';
 import People from './components/People';
 import PersonDetails from './components/PersonDetails';
-import Sidenav from './components/features/sidenav';
+import Sidenav from './components/features/Sidenav';
 
 function App() {
   return (
