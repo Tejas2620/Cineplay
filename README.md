@@ -19,9 +19,8 @@
 
 ## 🖼️ Screenshots
 
-![Home Page](https://raw.githubusercontent.com/Tejas2620/Cineplay/main/screenshots/home.png)
-![Movie Details](https://raw.githubusercontent.com/Tejas2620/Cineplay/main/screenshots/details.png)
-![Search](https://raw.githubusercontent.com/Tejas2620/Cineplay/main/screenshots/search.png)
+![Home Page](https://drive.proton.me/urls/2725TJR6CR#i0OjkRMMpR5U)
+![Movie Details](https://drive.proton.me/urls/0SB6NZSNT8#RsWpElwxOti9)
 
 ---
 
