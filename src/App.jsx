@@ -8,6 +8,8 @@ import MovieDetails from './components/MovieDetails';
 import People from './components/People';
 import PersonDetails from './components/PersonDetails';
 import Sidenav from './components/features/Sidenav';
+import About from './components/About';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             <Route path="/person/:id" element={<PersonDetails />} />
             <Route path="/search" element={<SearchResults />} />
             <Route path="/:mediaType/:id" element={<MovieDetails />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>
