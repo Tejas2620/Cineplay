@@ -65,6 +65,7 @@ const Topnav = () => {
             : item.media_type === 'tv'
             ? 'TV Show'
             : 'Person',
+        media_type: item.media_type, // <-- Add this line
         year:
           item.media_type === 'person'
             ? null
@@ -339,9 +340,11 @@ const Topnav = () => {
                       {searchResults.map((result, index) => (
                         <Link
                           key={`${result.type}-${result.id}`}
-                          to={`/${result.type
-                            .toLowerCase()
-                            .replace(' ', '-')}/${result.id}`}
+                          to={
+                            result.media_type === 'person'
+                              ? `/person/${result.id}`
+                              : `/${result.media_type}/${result.id}`
+                          }
                           className={`flex items-center p-3 rounded-lg transition-all duration-200 group ${
                             selectedIndex === index
                               ? 'bg-[#6556CD]/20 border border-[#6556CD]/30'

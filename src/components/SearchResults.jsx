@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import axios from '../utils/axios';
 
 function useQuery() {
@@ -61,9 +61,15 @@ const SearchResults = () => {
       )}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {results.map((item) => (
-          <div
+          <Link
             key={item.id + item.media_type}
+            to={
+              item.media_type === 'person'
+                ? `/person/${item.id}`
+                : `/${item.media_type}/${item.id}`
+            }
             className="flex items-center p-4 bg-zinc-900/80 rounded-lg border border-zinc-700 hover:border-[#6556CD] transition-all"
+            style={{ textDecoration: 'none' }}
           >
             <div className="w-16 h-24 bg-gradient-to-br from-[#6556CD] to-[#8B5CF6] rounded-lg flex items-center justify-center mr-4 overflow-hidden">
               {item.media_type === 'person' ? (
@@ -133,7 +139,7 @@ const SearchResults = () => {
                 </p>
               )}
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
