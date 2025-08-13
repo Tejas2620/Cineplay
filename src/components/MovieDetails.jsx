@@ -13,7 +13,6 @@ const MovieDetails = () => {
   const [watchProviders, setWatchProviders] = useState(null);
   const [similar, setSimilar] = useState([]);
   const [recommendations, setRecommendations] = useState([]);
-  const [episodes, setEpisodes] = useState([]);
   const [seasons, setSeasons] = useState([]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('overview');
@@ -53,7 +52,6 @@ const MovieDetails = () => {
             axios.get(`/tv/${id}/seasons/1`),
           ]);
           setSeasons([seasonsRes.data]);
-          setEpisodes(seasonsRes.data.episodes || []);
         } catch (error) {
           console.error('Error fetching TV show episodes:', error);
         }
@@ -353,6 +351,7 @@ const MovieDetails = () => {
                       <div
                         key={person.id}
                         className="text-center group cursor-pointer"
+                        onClick={() => navigate(`/person/${person.id}`)}
                       >
                         <div className="relative mb-3">
                           <img
@@ -704,6 +703,7 @@ const MovieDetails = () => {
                     <div
                       key={person.id}
                       className="text-center group cursor-pointer"
+                      onClick={() => navigate(`/person/${person.id}`)}
                     >
                       <div className="relative mb-3">
                         <img
@@ -733,7 +733,8 @@ const MovieDetails = () => {
                   {credits?.crew?.map((person) => (
                     <div
                       key={`${person.id}-${person.job}`}
-                      className="flex items-center gap-4 p-4 bg-zinc-800/50 rounded-lg"
+                      className="flex items-center gap-4 p-4 bg-zinc-800/50 rounded-lg cursor-pointer hover:bg-zinc-800/70 transition-colors duration-200"
+                      onClick={() => navigate(`/person/${person.id}`)}
                     >
                       <img
                         src={

@@ -5,6 +5,8 @@ import Trending from './components/Trending';
 import Popular from './components/Popular';
 import SearchResults from './components/SearchResults';
 import MovieDetails from './components/MovieDetails';
+import People from './components/People';
+import PersonDetails from './components/PersonDetails';
 import Sidenav from './components/templates/sidenav';
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/trending" element={<Trending />} />
             <Route path="/popular" element={<Popular />} />
+            <Route path="/people" element={<People />} />
+            <Route path="/person/:id" element={<PersonDetails />} />
             <Route path="/search" element={<SearchResults />} />
             <Route path="/:mediaType/:id" element={<MovieDetails />} />
           </Routes>
