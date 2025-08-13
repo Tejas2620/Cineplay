@@ -19,8 +19,8 @@
 
 ## 🖼️ Screenshots
 
-![Home Page](https://drive.proton.me/urls/2725TJR6CR#i0OjkRMMpR5U)
-![Movie Details](https://drive.proton.me/urls/0SB6NZSNT8#RsWpElwxOti9)
+![Home Page](public/screenshots/home.png)
+![Movie Details](public/screenshots/details.png)
 
 ---
 
