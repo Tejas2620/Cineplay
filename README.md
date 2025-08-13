@@ -19,8 +19,8 @@
 
 ## 🖼️ Screenshots
 
-![Home Page](public/screenshots/home.png)
-![Movie Details](public/screenshots/details.png)
+![Home Page](screenshots/home.png)
+![Movie Details](screenshots/details.png)
 
 ---
 
