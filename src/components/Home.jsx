@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import Topnav from './templates/topnav';
-import Header from './templates/header';
-import HorizontalCards from './templates/HorizontalCards';
-import PopularCards from './templates/PopularCards';
+import Topnav from './features/topnav';
+import Header from './features/header';
+import HorizontalCards from './features/HorizontalCards';
+import PopularCards from './features/PopularCards';
 
 function Home() {
   useEffect(() => {

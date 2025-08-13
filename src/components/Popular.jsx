@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from '../utils/axios';
-import Topnav from './templates/topnav';
+import Topnav from './features/topnav';
 
 const Popular = () => {
   const navigate = useNavigate();
